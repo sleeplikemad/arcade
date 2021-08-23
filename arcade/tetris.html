@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Coda|Codystar|Jacques+Francois+Shadow|Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tictactoe.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="tictactoe.js"></script>
+    <audio autoplay loop preload="auto" id='music'>
+      <source src= "arcade2.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <style>
+      @font-face {
+        font-family: 'Karmatic-Arcade';
+        src: url("Fonts/karmatic-arcade/ka1.ttf");
+      }
+      
+      
+      h1 {
+        font-family: 'Karmatic-Arcade';
+        color: rgb(78, 184, 245);
+      }
+    </style>
+  </head>
+  <body>
+    <main id="app">
+      <h1>
+        TETRIS
+      </h1>
+      <div class="tetris">
+        <section class="meta">
+          <div class="heading">Players</div>
+          <div>
+            <span class='label'>O: </span>
+            <span class="playerO"></span>
+          </div>
+          <div>
+            <span class='label'>X: </span>
+            <span class="playerX"></span>
+          </div>
+          
+        </section>
+        <section class="score">
+          <div class="heading">Total Score</button>
+          <div>
+            <span class='playerO'></span>
+            <span> :</span>
+            <span class="scoreO">0</span>
+          </div>
+          <div>
+            <span class='playerX'></span>
+            <span> :</span>
+            <span class="scoreX">0</span>
+          </div>
+          <div>
+            <span>Draws</span>
+            <span> :</span>
+            <span class="draws">0</span>
+          </div>
+          
+        </section>
+        <section class="pregame">
+          <div id='oneplayer'>1 Player</div>
+          <div id='twoplayers'>2 Players</div>
+        </section>
+        <section class="inputScreen">
+          <div class="inputHeading">Input Player Name</div>
+          <form>
+            <input class="firstInput" type="text" name='firstBox' maxlength=8 placeholder="Player 1" />
+            <input class="secondInput" type="text" name='secondBox' maxlength=8 placeholder="Player 2" />
+            <input class="submitIn" type=submit><br>
+          </form>
+        </section>
+        <section class="board">
+          <div id = '0' class = 'top left'></div>
+          <div id = '1' class = 'top mid'></div>
+          <div id = '2' class = 'top right'></div>
+          <div id = '3' class = 'middle left'></div>
+          <div id = '4' class = 'middle mid'></div>
+          <div id = '5' class = 'middle right'></div>
+          <div id = '6' class = 'bottom left'></div>
+          <div id = '7' class = 'bottom mid'></div>
+          <div id = '8' class = 'bottom right'></div>
+        </section>
+        <section class="other-board">
+          <div class="end">GAME OVER</div>
+          <div class="winnerx">Player X wins!</div>
+          <div class="winnero">Player O wins!</div>
+          <div class="draw">Cat's Game! ₍⸍⸌̣ʷ̣̫⸍̣⸌₎ </div>
+          <div class="advice">Click to play again</div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
